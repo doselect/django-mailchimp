@@ -1,5 +1,3 @@
-import simplejson
-
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.contrib import messages
@@ -16,7 +14,7 @@ from django.http import (
 )
 from mailchimp.settings import API_KEY, SECURE, REAL_CACHE, CACHE_TIMEOUT
 import re
-import simplejson
+import json as simplejson
 import warnings
 
 class KeywordArguments(dict):
